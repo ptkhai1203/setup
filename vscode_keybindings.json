@@ -1,0 +1,95 @@
+[
+    { 
+        "key": "cmd+k cmd+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        // "when": "terminalFocus || debugConsoleFocus || panelFocus || copilotFocus"
+        "wehn": "!editorFocus"
+    },
+    {
+        "key": "cmd+j cmd+k",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus && !debugConsoleFocus"
+    },
+    {
+        "key": "cmd+j cmd+l",
+        "command": "workbench.debug.action.focusRepl",
+        "when": "!debugConsoleFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "workbench.action.moveEditorToLeftGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "workbench.action.moveEditorToRightGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+j cmd+n",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    //fold funcs
+    {
+        "key": "cmd+k cmd+o",
+        "command": "editor.fold"
+    },
+    {
+        "key": "cmd+k cmd+u",
+        "command": "editor.unfold"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "cmd+j cmd+c",
+        "command": "workbench.panel.chat.view.copilot.focus",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "${fileBasename}" }
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    }
+]
+
